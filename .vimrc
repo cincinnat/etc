@@ -82,7 +82,7 @@ set incsearch
 set hlsearch
 
 " junegunn/fzf.vim
-map <c-p> :Files<CR>
+map <c-p> :GFiles<CR>
 
 " do not write files whoes name starts with [:;]
 " use `:noa w :ok.txt` to ignore this filter
