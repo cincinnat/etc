@@ -15,6 +15,7 @@ Plugin 'yggdroot/indentline'
 Plugin 'morhetz/gruvbox'
 Plugin 'luochen1990/rainbow'
 Plugin 'a.vim'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
