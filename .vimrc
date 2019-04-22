@@ -11,11 +11,12 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'yggdroot/indentline'
 Plugin 'morhetz/gruvbox'
 Plugin 'luochen1990/rainbow'
 Plugin 'a.vim'
 Plugin 'w0rp/ale'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 call vundle#end()
 filetype plugin indent on
@@ -91,9 +92,6 @@ map <c-p> :GFiles<CR>
 \   try | echoerr 'Forbidden file name: ' . expand('<afile>') | endtry
 
 
-" prevent YCM from showing the completion window while typing
-"let g:ycm_min_num_of_chars_for_completion = 9999
-
 " turn on 'luochen1990/rainbow'
 let g:rainbow_active = 1
 
@@ -104,3 +102,23 @@ let g:rainbow_conf = {
 \       'cmake': 0,
 \   }
 \}
+
+
+" w0rp/ale
+let g:ale_set_highlights = 0
+let g:ale_sign_column_always = 1
+
+
+" JamshedVesuna/vim-markdown-preview
+let g:vim_markdown_preview_hotkey='<C-m>'
+let g:vim_markdown_preview_browser='Firefox'
+let g:vim_markdown_preview_use_xdg_open=1
+let g:vim_markdown_preview_github=1
+
+
+" Valloric/YouCompleteMe
+map <c-h> :YcmCompleter GetDoc<CR>
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
