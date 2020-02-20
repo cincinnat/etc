@@ -29,6 +29,8 @@ set laststatus=2
 set showcmd
 set colorcolumn=80
 inoremap # X#
+" never enter the Ex mode
+nnoremap Q <Nop>
 
 
 "colorscheme slate
