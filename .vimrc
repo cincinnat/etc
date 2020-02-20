@@ -16,7 +16,10 @@ Plugin 'luochen1990/rainbow'
 Plugin 'a.vim'
 Plugin 'w0rp/ale'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'JamshedVesuna/vim-markdown-preview'
+" vundle does not support hooks though, it is here for reference only
+Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 filetype plugin indent on
@@ -112,13 +115,8 @@ let g:ale_sign_column_always = 1
 "let g:ale_lint_on_text_changed = 'never'
 let g:ale_linters = {'cpp': [], 'c': []}
 
-
-" JamshedVesuna/vim-markdown-preview
-let g:vim_markdown_preview_hotkey='<C-m>'
-let g:vim_markdown_preview_browser='Firefox'
-let g:vim_markdown_preview_use_xdg_open=1
-let g:vim_markdown_preview_github=1
-
+" iamcco/markdown-preview.nvim
+nmap <c-m> <Plug>MarkdownPreview
 
 " Valloric/YouCompleteMe
 nnoremap <c-h> :YcmCompleter GetDoc<CR>
