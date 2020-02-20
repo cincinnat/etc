@@ -83,7 +83,7 @@ set incsearch
 set hlsearch
 
 " junegunn/fzf.vim
-map <c-p> :GFiles<CR>
+nnoremap <c-p> :GFiles<CR>
 
 " do not write files whoes name starts with [:;]
 " use `:noa w :ok.txt` to ignore this filter
@@ -119,7 +119,7 @@ let g:vim_markdown_preview_github=1
 
 
 " Valloric/YouCompleteMe
-map <c-h> :YcmCompleter GetDoc<CR>
+nnoremap <c-h> :YcmCompleter GetDoc<CR>
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_enable_diagnostic_signs = 0
