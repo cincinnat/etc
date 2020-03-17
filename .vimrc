@@ -47,8 +47,6 @@ colorscheme gruvbox
 set background=dark
 
 
-"set statusline=%{fugitive#statusline()}\ %<%f%h%m%r%=format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&encoding}\ %b\ 0x%B\ %l,%c%V\ %P
-"
 " configure the statusline with 'itchyny/lightline' plugin
 "
 let g:lightline = {
