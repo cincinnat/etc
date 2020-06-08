@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'easymotion/vim-easymotion'
@@ -17,6 +18,7 @@ Plugin 'a.vim'
 Plugin 'w0rp/ale'
 Plugin 'Valloric/YouCompleteMe'
 " vundle does not support hooks though, it is here for reference only
+" :call mkdp#util#install()
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-repeat'
@@ -86,7 +88,8 @@ set incsearch
 set hlsearch
 
 " junegunn/fzf.vim
-nnoremap <c-p> :GFiles<CR>
+let $FZF_DEFAULT_COMMAND='git ls-files --recurse-submodules'
+nnoremap <c-p> :Files<CR>
 
 " do not write files whoes name starts with [:;]
 " use `:noa w :ok.txt` to ignore this filter
