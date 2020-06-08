@@ -120,7 +120,12 @@ nmap <c-m> <Plug>MarkdownPreview
 
 " Valloric/YouCompleteMe
 nnoremap <c-h> :YcmCompleter GetDoc<CR>
-let g:ycm_confirm_extra_conf = 0
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
+nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_auto_hover=''
