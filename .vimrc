@@ -22,6 +22,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-repeat'
+Plugin 'cespare/vim-toml'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 filetype plugin indent on
@@ -113,7 +115,7 @@ let g:rainbow_conf = {
 " w0rp/ale
 let g:ale_set_highlights = 0
 let g:ale_sign_column_always = 1
-let g:ale_linters = {'cpp': [], 'c': []}
+let g:ale_linters = {'cpp': [], 'c': [], 'python': []}
 
 " iamcco/markdown-preview.nvim
 nmap <c-m> <Plug>MarkdownPreview
@@ -129,3 +131,6 @@ let g:ycm_show_diagnostics_ui = 0
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_auto_hover=''
+
+" Plugin 'lervag/vimtex'
+let g:tex_flavor = 'latex'
