@@ -24,6 +24,7 @@ Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-repeat'
 Plugin 'cespare/vim-toml'
 Plugin 'lervag/vimtex'
+Plugin 'xuhdev/vim-latex-live-preview'
 
 call vundle#end()
 filetype plugin indent on
