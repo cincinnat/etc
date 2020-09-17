@@ -116,7 +116,7 @@ let g:rainbow_conf = {
 " w0rp/ale
 let g:ale_set_highlights = 0
 let g:ale_sign_column_always = 1
-let g:ale_linters = {'cpp': [], 'c': [], 'python': []}
+let g:ale_linters = {'cpp': [], 'c': []}
 
 " iamcco/markdown-preview.nvim
 nmap <c-m> <Plug>MarkdownPreview
