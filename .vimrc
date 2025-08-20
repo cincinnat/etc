@@ -36,6 +36,7 @@ set number
 set laststatus=2
 set showcmd
 set colorcolumn=80
+set mouse=
 inoremap # X#
 " never enter the Ex mode
 nnoremap Q <Nop>
