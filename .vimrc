@@ -25,6 +25,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'cespare/vim-toml'
 Plugin 'lervag/vimtex'
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'SirVer/ultisnips'
 
 call vundle#end()
 filetype plugin indent on
@@ -136,3 +137,9 @@ let g:ycm_auto_hover=''
 
 " Plugin 'lervag/vimtex'
 let g:tex_flavor = 'latex'
+let g:vimtex_indent_enabled = 0
+
+" SirVer/ultisnips
+let g:UltiSnipsExpandTrigger="<c-s>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
