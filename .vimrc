@@ -3,31 +3,30 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'morhetz/gruvbox'
-Plugin 'luochen1990/rainbow'
-Plugin 'a.vim'
-Plugin 'w0rp/ale'
-Plugin 'Valloric/YouCompleteMe'
-" vundle does not support hooks though, it is here for reference only
-" :call mkdp#util#install()
-Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-Plugin 'guns/vim-sexp'
-Plugin 'tpope/vim-repeat'
-Plugin 'cespare/vim-toml'
-Plugin 'lervag/vimtex'
-Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'SirVer/ultisnips'
+Plug 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'morhetz/gruvbox'
+Plug 'luochen1990/rainbow'
+Plug 'vim-scripts/a.vim'
+Plug 'w0rp/ale'
+Plug 'Valloric/YouCompleteMe'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-repeat'
+Plug 'cespare/vim-toml'
+Plug 'lervag/vimtex'
+Plug 'xuhdev/vim-latex-live-preview'
+Plug 'SirVer/ultisnips'
+Plug 'd2lang/d2-vim'
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 set wrap
